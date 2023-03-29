@@ -1,0 +1,139 @@
+* {
+  margin: o;
+  padding: 0;
+}
+
+body {
+  font-family: "Merriweather", serif;
+}
+body h1 {
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1.5;
+}
+body h3 {
+  font-family: "Ubuntu", sans-serif;
+}
+
+#background {
+  background-color: #9A208C;
+  color: #FFEAEA;
+}
+#background .nav-link {
+  color: #FFEAEA;
+}
+#background .navbar-brand {
+  color: #FFEAEA;
+}
+#background .navbar {
+  padding: 3% 15% 0;
+  background-color: #8b147d;
+  font-weight: bold;
+}
+#background .logo {
+  width: 2rem;
+}
+
+.tleft {
+  text-align: left;
+}
+
+.tright {
+  text-align: right;
+}
+
+.row-one {
+  padding: 15% 15% 10%;
+}
+.row-one #intro {
+  text-align: left;
+  animation-name: left;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.row-one #intro h1, .row-one #intro p {
+  padding-bottom: 1rem;
+}
+.row-one #intro a {
+  text-decoration: none;
+  color: rgb(19, 18, 18);
+}
+.row-one .cover-de, .row-one .cover-design {
+  animation-name: right;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.row-one .cover-de {
+  width: 21%;
+}
+.row-one .cover-design {
+  width: 60%;
+}
+
+#courses {
+  padding: 5% 15% 5%;
+  text-align: center;
+  color: rgb(19, 18, 18);
+}
+#courses .courses img {
+  width: 100%;
+}
+#courses .courses a {
+  text-decoration: none;
+  color: rgb(19, 18, 18);
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#mind-set {
+  text-align: center;
+  color: rgb(19, 18, 18);
+  padding-bottom: 10%;
+}
+#mind-set h3 {
+  padding-bottom: 1.5rem;
+}
+
+footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 2% 0;
+}
+footer p {
+  padding: 0 30%;
+}
+
+@keyframes left {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes right {
+  from {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 768px) {
+  #background .navbar {
+    padding: 3% 10% 0;
+  }
+  #background #intro {
+    text-align: center;
+  }
+  #background #intro button {
+    margin-bottom: 4rem;
+  }
+  #background .tright {
+    text-align: center;
+  }
+}/*# sourceMappingURL=style.css.map */
